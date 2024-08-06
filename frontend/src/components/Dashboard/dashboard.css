@@ -1,0 +1,74 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainBtnDash {
+  position: relative;
+  left: 74%;
+  display: inline-block;
+  margin: 1%;
+  width: 277px;
+  height: 50px;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 17px;
+  letter-spacing: 0.045em;
+}
+
+.mainBtnDash svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mainBtnDash svg rect {
+  /* stroke: #EC0033; */
+  stroke-width: 4;
+  stroke-dasharray: 353, 0;
+  stroke-dashoffset: 0;
+  -webkit-transition: all 600ms ease;
+  transition: all 600ms ease;
+}
+
+.mainBtnDash span {
+  background: rgb(130, 230, 255);
+  background: -moz-linear-gradient(
+    left,
+    rgba(130, 230, 255, 1) 0%,
+    rgb(130, 230, 255) 100%
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(130, 230, 255, 1) 0%,
+    rgba(130, 230, 255, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(130, 230, 255, 1) 0%,
+    rgb(130, 230, 255) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed', GradientType=1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mainBtnDash:hover svg rect {
+  stroke-width: 4;
+  stroke-dasharray: 196, 543;
+  stroke-dashoffset: 437;
+}
+
+.mapImg {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1%;
+}

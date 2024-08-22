@@ -8,8 +8,7 @@
     "heroku-postbuild": "npm install concurrently && npm run install-frontend && npm run build",
     "server": "nodemon server.js",
     "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix frontend\"",
-    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix frontend\"",
-    "postinstall": "cd frontend && npm install --force"
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix frontend\""
   },
   "dependencies": {
     "bcrypt": "^4.0.1",

@@ -64,6 +64,3 @@ jobs:
           slot-name: 'Production'
           package: .
           
-      - name: 'Build App'
-        run:
-          npm run start

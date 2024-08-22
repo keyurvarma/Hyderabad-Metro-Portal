@@ -23,11 +23,13 @@ jobs:
 
       - name: npm install, build, and test
         run: |
+          npm install -g remove-node-modules
+          remove-node-modules
           npm install concurrently
           npm install --force
       
       - name: Upload artifact for deployment job
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v4.3.5
         with:
           name: node-app
           path: .

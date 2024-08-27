@@ -56,10 +56,10 @@ app.use(
   loggedInPage
 ); //To Secure Route
 app.use("/api/bookingHistory", bookingHistory);
-app.use(express.static(path.resolve(__dirname, "./frontend/build")));
+app.use(express.static(path.resolve(__dirname, "./client/build")));
 
 app.get("*", function (req, res) {
-  res.sendFile(path.resolve(__dirname, "./frontend/build", "index.html"));
+  res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
 });
 
 app.set("port",process.env.PORT||8080)

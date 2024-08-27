@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build-client": "cd client && npm install --force && npm run build",
-    "build": "npm install && npm run build-client",
+    "build": "npm install && npm run build-client && npm install -g conurrently",
     "install-client": "cd client && npm install --force",
     "heroku-postbuild": "npm install concurrently && npm run install-client && npm run build",
     "server": "nodemon server.js",

@@ -62,7 +62,7 @@ app.get("*", function (req, res) {
   res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
 });
 
-app.set("port",process.env.PORT||8080)
+app.set("port",process.env.PORT||8081)
 
 app.listen(app.get("port"), () => {
   console.log(`server running on port ${app.get("port")}`);
